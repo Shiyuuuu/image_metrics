@@ -202,8 +202,8 @@ def calculate_ssim_pt(img, img2, crop_border=0, test_y_channel=False, **kwargs):
 
 if __name__ =='__main__':
     from skimage import io
-    clean = io.imread('/braindat/lab/dsy/DADn/denoise_dataset_retina/unpaired_training/unseen_clean/2762.png')
-    noisy = io.imread('/braindat/lab/dsy/DADn/denoise_dataset_retina/unpaired_training/noisy/2762.png')
+    clean = io.imread('clean/2762.png')
+    noisy = io.imread('noisy/2762.png')
     print(calculate_psnr(clean, noisy, crop_border=0))
     print(calculate_ssim(clean, noisy, crop_border=0))
 
