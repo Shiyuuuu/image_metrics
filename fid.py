@@ -230,8 +230,8 @@ if __name__ == '__main__':
 
     from skimage import io
 
-    clean = '/braindat/lab/dsy/DADn/denoise_dataset_retina/testset_woOverlap/test_clean_patch/'
-    noisy = '/braindat/lab/dsy/DADn/denoise_dataset_retina/testset_woOverlap/test_noisy_patch/'
+    clean = 'clean_patch/'
+    noisy = 'noisy_patch/'
 
     # parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
     parser = ArgumentParser()
@@ -258,8 +258,3 @@ if __name__ == '__main__':
                                           args.gpu != '',
                                           args.dims)
     print('FID: ', fid_value)
-
-    '''
-    python fid.py '/braindat/lab/dsy/DADn/denoise_dataset_retina/testset_woOverlap/test_noisy_patch/'  \
-                    '/braindat/lab/dsy/DADn/denoise_dataset_retina/testset_woOverlap/test_clean_patch/'
-    '''
