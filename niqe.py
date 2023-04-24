@@ -181,9 +181,9 @@ def calculate_niqe(img, crop_border, params_path, input_order='HWC', convert_to=
 
 if __name__ =='__main__':
     from skimage import io
-    clean = io.imread('/braindat/lab/dsy/DADn/denoise_dataset_retina/unpaired_training/unseen_clean/2762.png')
-    noisy = io.imread('/braindat/lab/dsy/DADn/denoise_dataset_retina/unpaired_training/noisy/2762.png')
-    params_path = '/braindat/lab/dsy/DADn/pre-train-models/'
+    clean = io.imread('clean/2762.png')
+    noisy = io.imread('noisy/2762.png')
+    params_path = 'pre-train-models/'
     '''
     NIQE值越小,图像质量越好。
     '''
