@@ -122,7 +122,7 @@ def get_inception_score(imgs, batch_size=32, resize=True, splits=10):
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='Evaluation ont the dataset')
     parser.add_argument('--save_path', type=str,
-                        default='/braindat/lab/dsy/DADn/denoise_dataset_retina/testset_woOverlap/test_noisy_patch/',
+                        default='noisy/',
                         help='path to save the test dataset')
     parser.add_argument('--num_test', type=int, default=400,
                         help='how many images to load for each test')
