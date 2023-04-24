@@ -27,7 +27,7 @@ if __name__ =='__main__':
 
     from skimage import io
 
-    clean = io.imread('/braindat/lab/dsy/DADn/denoise_dataset_retina/unpaired_training/unseen_clean/2762.png')
-    noisy = io.imread('/braindat/lab/dsy/DADn/denoise_dataset_retina/unpaired_training/noisy/2762.png')
+    clean = io.imread('clean/2762.png')
+    noisy = io.imread('noisy/2762.png')
     print(loss_fn_alex(img2tensor(clean), img2tensor(noisy)))
     print(loss_fn_vgg(img2tensor(clean), img2tensor(noisy)))
